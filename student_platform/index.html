@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodiScience Student</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CodiStudy</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="courses.html" class="go-to-courses">Courses</a></li>
+        <li><a href="#">Assignments</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile">
+      <div class="profile-header">
+        <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+        <div>
+          <h2>Student Name</h2>
+          <p>Level: <strong>Junior Scientist</strong></p>
+          <p>Points: <strong>1,240 ⭐</strong></p>
+        </div>
+      </div>
+    
+      <div class="progress-section">
+        <h3>Your Progress</h3>
+        <ul>
+          <li>Robotics: <span class="progress-bar"><span style="width: 70%"></span></span> 70%</li>
+          <li>Space Science: <span class="progress-bar"><span style="width: 40%"></span></span> 40%</li>
+          <li>Biology Quest: <span class="progress-bar"><span style="width: 90%"></span></span> 90%</li>
+        </ul>
+      </div>
+    
+      <button class="edit-btn" onclick="openEdit()">Edit Profile</button>
+
+      <div class="edit-form" style="display: none;">
+        <h3>Edit Profile</h3>
+        <label>
+          Name:
+          <input type="text" id="edit-name">
+        </label>
+        <label>
+          Avatar URL:
+          <input type="text" id="edit-avatar">
+        </label>
+        <button onclick="saveProfile()">Save</button>
+      </div>
+    </section>    
+  </main>
+  <footer>
+    <p>&copy; 2025 CodiScience. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Профиль учителя – CodiTeach</title>
+  <link rel="stylesheet" href="teach-style.css" />
+</head>
+<body>
+  <header>
+    <h1>CodiTeach</h1>
+    <nav>
+      <ul>
+        <li><a href="teachers-dashboard.html">Главная</a></li>
+        <li><a href="manage-courses.html">Курсы</a></li>
+        <li><a href="students.html">Ученики</a></li>
+        <li><a href="#" class="active">Профиль</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+    <h2>Профиль учителя</h2>
+    <form class="profile-form" onsubmit="saveProfile(event)">
+      <label>Имя:
+        <input type="text" id="teacherName" value="Алия Исмагулова" required />
+      </label>
+      <label>Email:
+        <input type="email" id="teacherEmail" value="aliya@school.kz" required />
+      </label>
+      <label>Школа:
+        <input type="text" id="teacherSchool" value="Лицей №77" />
+      </label>
+      <label>Пароль:
+        <input type="password" id="teacherPassword" placeholder="●●●●●●●" />
+      </label>
+      <button type="submit">Сохранить изменения</button>
+    </form>
+  </main>
+
+  <script>
+    function saveProfile(e) {
+      e.preventDefault();
+      alert("Изменения сохранены!");
+    }
+  </script>
+</body>
+</html>
